@@ -6,3 +6,4 @@
 Ricarda Schirato hat ausprobiert
 Tschou  Phippu
 Tschou zäme hie isch Tänu
+sali tänu fröit mi
