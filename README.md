@@ -5,3 +5,4 @@
 ### 1. Idee
 Ricarda Schirato hat ausprobiert
 Tschou  Phippu
+Tschou zäme hie isch Tänu
