@@ -9,41 +9,47 @@
     max-width: 150px;
     max-width: 140px;
     flex-shrink: 0;
+    padding: 50px;
 }
 
-.googlePlay{
-    max-height: 70px;
+.button1 {
+    height: 70px;
+    width: 500px;
+    flex-shrink: 0;
+    border-radius: 10px;
+    background: #430075;
+    margin-left: 20px;
+}
+
+.button2 {
+    height: 70px;
+    width: 500px;
+    flex-shrink: 0;
+    border-radius: 10px;
+    background: #430075;
+    margin-left: 20px;
+}
+
+.button3 {
+    min-height: 70px;
     max-width: 500px;
     flex-shrink: 0;
     border-radius: 10px;
     background: #430075;
+    margin: 20px;
 }
 
-.appStore{
-    max-height: 70px;
+.button4 {
+    min-height: 70px;
     max-width: 500px;
     flex-shrink: 0;
     border-radius: 10px;
     background: #430075;
+    margin-left: 20px;
+    margin-bottom: 170px;
 }
 
-.googlePlay2{
-    max-height: 70px;
-    max-width: 500px;
-    flex-shrink: 0;
-    border-radius: 10px;
-    background: #430075;
-}
-
-.appStore2{
-    max-height: 70px;
-    max-width: 500px;
-    flex-shrink: 0;
-    border-radius: 10px;
-    background: #430075;
-}
-
-.dropdown{
+.dropdown {
     max-height: 210px;
     max-width: 500px;
     flex-shrink: 0;
@@ -55,20 +61,19 @@
 .parent {
     display: grid;
     grid-template-columns: repeat(12, 1fr);
-    grid-template-rows: repeat(8, 1fr);
-    grid-column-gap: 10px;
-    grid-row-gap: 10px;
+    grid-template-rows: auto auto;
+    justify-content: space-around;
     }
     
     .A { grid-area: 1 / 1 / 2 / 8; }
-    .googlePlay { grid-area: 2 / 1 / 3 / 8; }
-    .appStore { grid-area: 3 / 1 / 4 / 8; }
+    .button1 { grid-area: 2 / 1 / 3 / 8; }
+    .button2 { grid-area: 3 / 1 / 4 / 8; }
     .imgApp { grid-area: 1 / 8 / 4 / 13; }
     .B { grid-area: 4 / 1 / 5 / 13; }
     .imgEssen { grid-area: 5 / 1 / 6 / 7; }
     .C { grid-area: 5 / 7 / 6 / 13; }
     .D { grid-area: 6 / 1 / 7 / 8; }
     .dropdown { grid-area: 6 / 8 / 7 / 13; }
-    .googlePlay2 { grid-area: 7 / 1 / 8 / 8; }
-    .appStore2 { grid-area: 8 / 1 / 9 / 8; }
+    .button3 { grid-area: 7 / 1 / 8 / 8; }
+    .button4 { grid-area: 8 / 1 / 9 / 8; }
     .E { grid-area: 7 / 8 / 9 / 13; }
