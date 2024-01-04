@@ -26,29 +26,28 @@
         </div>
     </header>
     <main>
-        <h3>Kontaktinformationen</h3>
-        <ul>
-            <li><b>HotBox</b></li>
-            <li>Limmatstrasse 21</li>
-            <li>8005 Zürich</li>
-            <li>Tel. 026 722 89 17</li>
-            <li>info@hotbox.ch</li>
-            <li>www.hotbox.ch</li>
-        </ul>
-        <div class="kontaktformular">
-        <h3>Kontaktformular</h3>
-        <form action="submit_form.php" method="POST">
-            <label for="name">Dein Name:</label>
-            <input type="text" id="name" name="name" required>
-            <br>
-            <label for="email">Deine Email:</label>
-            <input type="email" id="email" name="email" required>
-            <br>
-            <label for="message">Deine Nachricht:</label>
-            <textarea id="message" name="message" required></textarea>
-            <br>
-            <input type="submit" value="Senden">
-        </form>
+        <div class="kontakt">
+            <div class="frage"><h3>Wie können wir dir helfen?</h3></div>
+            <div class="bestellungen"><a>Bestellungen</a></div>
+            <div class="lieferungen"><a>Lieferungen</a></div>
+            <div class="bezahlungen"><a>Bezahlungen</a></div>
+            <div class="text">
+                <h3>Keine passende Antwort gefunden?</h3>
+                <p>
+                    Schreib uns doch einfach. Wir freuen uns über dein Feedback.
+                    Wir pflegen eine offene Kommunikation und sind froh, wenn du das auch tust.
+                    Wenn du mehr über unsere Werte und Überzeugungen erfahren willst, dann schau doch hier vorbei:
+                </p>
+                </p><a href="http://127.0.0.1:5500/ueber_uns.html"><p>Über uns</p></a>
+            </div>
+            <div class="kontaktformular">
+                <form action="" method="POST">
+                    <input type="text" id="betreff" name="betreff" placeholder="Betreff" required>
+                    <input type="email" id="email" name="email" placeholder="max.mustermann@mail.ch" required>
+                    <textarea id="message" name="message" placeholder="Deine Nachricht an uns..." required></textarea>
+                    <input type="submit" value="Senden">
+                </form>
+            </div>
         </div>
     </main>
     

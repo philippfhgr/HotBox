@@ -2,19 +2,68 @@ main {
     margin: 50px
 }
 
-ul {
-    padding: 0;
-    margin-left: 50px;
-}
-
-li {
-    list-style-type: none;
-    color: var(--Dunkelblau, #012257);
+input[type="text"] {
+    border-radius: 10px;
+    border: #430075 5px solid;
+    color: #000;
+    font-style: italic;
+    font-weight: 100;
+    line-height: 50px;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 20px;
+    margin: 20px;
+    width: 400px;
+    padding-left: 10px;
+}
+
+input[type="email"] {
+    border-radius: 10px;
+    border: #430075 5px solid;
+    color: #000;
+    font-style: italic;
+    font-weight: 100;
+    line-height: 50px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    margin: 20px;
+    width: 400px;
+    padding-left: 10px;
+}
+
+textarea{
+    border-radius: 10px;
+    border: #430075 5px solid;
+    color: #000;
+    font-style: italic;
+    font-weight: 100;
+    line-height: 50px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    margin: 20px;
+    width: 400px;
+    height: 300px;
+    padding-left: 10px;
+}
+
+input[type="submit"] {
+    border-radius: 10px;
+    border: 0px;
+    background-color: #430075;
+    color: #E7FC35;
     font-style: normal;
-    font-weight: 300;
-    line-height: 30px;
+    font-weight: 100;
+    line-height: 50px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 25px;
+    margin: 20px;
+    width: 420px;
+    margin-bottom: 80px;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: #E7FC35;
+    color: #430075;
 }
 
 .kontaktformular {
@@ -24,4 +73,78 @@ li {
     font-style: normal;
     font-weight: 300;
     line-height: 30px;
+    display:flex;
+    flex-direction: column;
 }
+
+.bestellungen {
+    height: 70px;
+    width: 250px;
+    flex-shrink: 0;
+    border-radius: 10px;
+    background: #430075;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 80px;
+    cursor: pointer;
+}
+
+.bestellungen:hover, .bestellungen:hover a {
+    background: #E7FC35;
+    color: #430075;
+}
+
+.lieferungen {
+    height: 70px;
+    width: 250px;
+    flex-shrink: 0;
+    border-radius: 10px;
+    background: #430075;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 80px;
+    cursor: pointer;
+}
+
+.lieferungen:hover, .lieferungen:hover a {
+    background: #E7FC35;
+    color: #430075;
+}
+
+.bezahlungen {
+    height: 70px;
+    width: 250px;
+    flex-shrink: 0;
+    border-radius: 10px;
+    background: #430075;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 80px;
+    cursor: pointer;
+}
+
+.bezahlungen:hover, .bezahlungen:hover a {
+    background: #E7FC35;
+    color: #430075;
+}
+
+.text {
+    display: flex;
+    flex-direction: column;
+}
+
+.kontakt {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: auto auto;
+    grid-column-gap: 0px;
+    grid-row-gap: 50px;
+    justify-items: center;
+    }
+    
+    .frage { grid-area: 1 / 4 / 2 / 10; }
+    .bestellungen { grid-area: 2 / 2 / 3 / 4; }
+    .lieferungen { grid-area: 2 / 6 / 3 / 8; }
+    .bezahlungen { grid-area: 2 / 10 / 3 / 12; }
+    .text { grid-area: 3 / 3 / 4 / 6; }
+    .kontaktformular { grid-area: 3 / 8 / 4 / 11; }
