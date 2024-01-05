@@ -18,7 +18,7 @@ img {
     .titel { grid-area: 2 / 1 / 4 / 13; margin: 20px; }
 
 header {
-    background-image: url(../img/header.jpg);
+    background-image: url(../img/header.webp);
     background-size: cover;
     height: 400px;
 }
@@ -138,7 +138,7 @@ p {
         border-radius: 10px;
         background: var(--Violet, #430075);
         margin-bottom: 170px;
-        margin-top: 50px
+        margin-top: 50px;
 }
 
 .quader1 a {
@@ -177,23 +177,21 @@ p {
     background: var(--Violet, #430075);
     margin-bottom: 170px;
     margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
-.quader3 a {
-    font-size: 25px;
+.quader3 a h3{
     color: #E7FC35;
-    text-decoration: none;
-    font-weight: 600;
-    margin-left: 90px;
+    margin: 0px;
 }
 
 .quader3 p {
-    color: #F0D59E;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 20px;
-    font-style: normal;
-    font-weight: 300;
-    margin:30px;
+    color: #E7FC35;
+    margin: 0px;
+    margin-left: 15px;
+    align-self: center;
 }
 
 .home {

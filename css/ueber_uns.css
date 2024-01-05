@@ -15,7 +15,7 @@
     border-radius: 10px;
     background: var(--Violet, #430075);
     display: grid;
-    grid-area: 3 / 5 / 4 / 9;
+    grid-area: 3 / 5 / 4 / 8;
     align-items: center;
     justify-items: center;
 }
@@ -26,7 +26,7 @@
     border-radius: 10px;
     background: var(--Violet, #430075);
     display: grid;
-    grid-area: 3 / 9 / 4 / 13;
+    grid-area: 3 / 9 / 4 / 12;
     align-items: center;
     justify-items: center;
 }
@@ -37,7 +37,7 @@
     border-radius: 10px;
     background: var(--Violet, #430075);
     display: grid;
-    grid-area: 4 / 3 / 5 / 7;
+    grid-area: 4 / 1 / 5 / 5;
     align-items: center;
     justify-items: center;
 
@@ -49,7 +49,7 @@
     border-radius: 10px;
     background: var(--Violet, #430075);
     display: grid;
-    grid-area: 4 / 7 / 5 / 11;
+    grid-area: 4 / 9 / 5 / 12;
     align-items: center;
     justify-items: center;
 
@@ -120,7 +120,7 @@
 .dropdown-content {
     display: none;
     position: absolute;
-    background-color: #430075;
+    background-color: #E7FC35;
     width: 300px;
     z-index: 1;
     border-radius: 10px;
@@ -128,7 +128,7 @@
 
 /* Links innerhalb des Dropdown-Inhalts */
 .dropdown-content a {
-    color: #E7FC35;
+    color: #430075;
     /* Textfarbe der Dropdown-Links */
     padding: 12px 16px;
     /* Innenabstand der Dropdown-Links */
