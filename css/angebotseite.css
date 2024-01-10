@@ -3,41 +3,37 @@
     margin-left: 100px;
 }
 
-.button1 {
-    height: 70px;
-    width: 500px;
-    flex-shrink: 0;
-    border-radius: 10px;
-    background: #430075;
-    margin-left: 20px;
+.hover-image1,
+.hover-image2,
+.hover-image3,
+.hover-image4 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
 }
 
-.button2 {
-    height: 70px;
-    width: 500px;
-    flex-shrink: 0;
-    border-radius: 10px;
-    background: #430075;
-    margin-left: 20px;
+.button1:hover .hover-image1,
+.button2:hover .hover-image2,
+.button3:hover .hover-image3,
+.button4:hover .hover-image4 {
+  opacity: 1;
+  cursor: pointer;
 }
 
+.button1,
+.button2,
 .button3 {
-    height: 70px;
-    width: 500px;
-    flex-shrink: 0;
-    border-radius: 10px;
-    background: #430075;
-    margin: 20px;
+    margin-left: 20px;
+    position: relative;
+    display: inline-block;
 }
 
 .button4 {
-    height: 70px;
-    width: 500px;
-    flex-shrink: 0;
-    border-radius: 10px;
-    background: #430075;
     margin-left: 20px;
     margin-bottom: 170px;
+    position: relative;
+    display: inline-block;
 }
 
 .hotbox {

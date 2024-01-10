@@ -8,19 +8,27 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/angebotseite.css">
 </head>
-
-<header class="headerParent">
-    <nav class="nav">
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="angebotsseite.html">So funktioniert's</a></li>
-            <li><a href="ueber_uns.html">Über uns</a></li>
-            <li><a href="kontakt.html">Deine Meinung zählt</a></li>
+<header>
+    <nav>
+        <div class="logo">
+            <a href="index.html"><img src="img/logo.png" alt="Logo HotBox"></a>
+        </div>
+        <ul class="menu">
+            <li>
+                <a><img src="img/burger.png" alt="Menu"></a>
+                <ul class="submenu">
+                    <li><a href="angebotsseite.html">So funktioniert's</a></li>
+                    <li><a href="ueber_uns.html">Über uns</a></li>
+                    <li><a href="kontakt.html">Kontakt</a></li>
+                </ul>
+            </li>
         </ul>
     </nav>
     <div class="titel">
-        <h1>HotBox</h1>
-    <h2>So funktioniert's</h2>
+        <a href="index.html">
+            <h1>HotBox</h1>
+        </a>
+        <h2>So funktioniert's</h2>
     </div>
 </header>
 
@@ -28,16 +36,20 @@
     <main>
         <div class="parent">
             <div class="button1">
-                <a> <img src="img/googlelplay.webp" alt="GooglePlay Logo"> Download für Google Play</a>
+                <img src="img/appstoreB.webp" alt="Appstore Button">
+                <img src="img/appstoreBH.webp" class="hover-image1" alt="Appstore Button Hover">
             </div>
             <div class="button2">
-                <a> <img src="img/appstore.webp" alt="AppStore Logo"> Download für App Store</a>
+                <img src="img/googleplayB.webp" alt="Googleplay Button">
+                <img src="img/googleplayBH.webp" class="hover-image2" alt="Googleplay Button Hover">
             </div>
             <div class="button3">
-                <a> <img src="img/googlelplay.webp" alt="GooglePlay Logo"> Download für Google Play</a>
+                <img src="img/appstoreB.webp" alt="Appstore Button">
+                <img src="img/appstoreBH.webp" class="hover-image3" alt="appstore Button Hover">
             </div>
             <div class="button4">
-                <a> <img src="img/appstore.webp" alt="AppStore Logo"> Download für App Store</a>
+                <img src="img/googleplayB.webp" alt="Googleplay Button">
+                <img src="img/googleplayBH.webp" class="hover-image4" alt="Googleplay Button Hover">
             </div>
             <div class="dropdownGrid">
                 <div class="dropdown">
@@ -50,16 +62,16 @@
                         </ul>
                     </div>
                 </div>
-                
+
                 <div class="dropdown">
                     <button class="dropbtn">HotBox Standorte <img src="img/drop.webp" alt="Dropdown"></button>
                     <div class="dropdown-content">
-                    <img src="img/karte.jpg" alt="HotBox Standorte">
+                        <img src="img/karte.jpg" alt="HotBox Standorte">
                     </div>
                 </div>
             </div>
             <div class="imgApp">
-                <img src="img/app.jpg" alt="App">
+                <img src="img/app.webp" alt="App">
             </div>
             <div class="hotbox">
                 <img src="img/hotboxquadrat.jpg" alt="Abholung">
@@ -119,9 +131,23 @@
     </main>
 
     <footer>
-        <h4>
+        <ul class="links">
             <a href="impressum.html">Impressum</a>
-        </h4>
+            <a>AGB</a>
+            <a>Datenschutzerklärung</a>
+            <a href="kontakt.html">Kontaktseite</a>
+        </ul>
+        <ul class="mitte">
+            <a>HotBox</a>
+            <a>Limmatstrasse 21</a>
+            <a>8005 Zürich</a>
+            <a>Tel. 026 722 89 17</a>
+        </ul>
+        <ul class="rechts">
+            <a>Werde Teil der HotBox Community</a>
+            <a href="kontakt.html">Jetzt Anmelden zum Newsletter</a>
+            <img src="img/Social Icon.png" alt="Social Media">
+        </ul>
     </footer>
 </body>
 
