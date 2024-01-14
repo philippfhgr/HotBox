@@ -1,7 +1,3 @@
-main {
-    margin: 50px
-}
-
 input[type="text"] {
     border-radius: 10px;
     border: #430075 5px solid;
@@ -30,7 +26,7 @@ input[type="email"] {
     padding-left: 10px;
 }
 
-textarea{
+textarea {
     border-radius: 10px;
     border: #430075 5px solid;
     color: #000;
@@ -73,14 +69,12 @@ input[type="submit"]:hover {
     font-style: normal;
     font-weight: 300;
     line-height: 30px;
-    display:flex;
-    flex-direction: column;
 }
 
 .bestellungen {
     height: 70px;
     width: 250px;
-    flex-shrink: 0;
+    max-width: 100%;
     border-radius: 10px;
     background: #430075;
     display: flex;
@@ -89,7 +83,8 @@ input[type="submit"]:hover {
     cursor: pointer;
 }
 
-.bestellungen:hover, .bestellungen:hover a {
+.bestellungen:hover,
+.bestellungen:hover a {
     background: #E7FC35;
     color: #430075;
 }
@@ -97,16 +92,19 @@ input[type="submit"]:hover {
 .lieferungen {
     height: 70px;
     width: 250px;
-    flex-shrink: 0;
+    max-width: 100%;
     border-radius: 10px;
     background: #430075;
     display: flex;
     justify-content: center;
     margin-bottom: 80px;
     cursor: pointer;
+    margin-left: 10px;
+    margin-right: 10px;
 }
 
-.lieferungen:hover, .lieferungen:hover a {
+.lieferungen:hover,
+.lieferungen:hover a {
     background: #E7FC35;
     color: #430075;
 }
@@ -114,7 +112,7 @@ input[type="submit"]:hover {
 .bezahlungen {
     height: 70px;
     width: 250px;
-    flex-shrink: 0;
+    max-width: 100%;
     border-radius: 10px;
     background: #430075;
     display: flex;
@@ -123,9 +121,11 @@ input[type="submit"]:hover {
     cursor: pointer;
 }
 
-.bezahlungen:hover, .bezahlungen:hover a {
+.bezahlungen:hover,
+.bezahlungen:hover a {
     background: #E7FC35;
     color: #430075;
+    max-width: 100%;
 }
 
 .text {
@@ -139,21 +139,49 @@ input[type="submit"]:hover {
     font-size: 20px;
     line-height: 30px;
     margin: 0px;
-    font-style:italic
+    font-style: italic
 }
 
 .kontakt {
     display: grid;
-    grid-template-columns: repeat(12, 1fr);
+    grid-template-columns: repeat(auto-fit, minmax(33%, 1fr));
     grid-template-rows: auto auto;
-    grid-column-gap: 0px;
-    grid-row-gap: 50px;
     justify-items: center;
-    }
-    
-    .frage { grid-area: 1 / 4 / 2 / 10; }
-    .bestellungen { grid-area: 2 / 2 / 3 / 4; }
-    .lieferungen { grid-area: 2 / 6 / 3 / 8; }
-    .bezahlungen { grid-area: 2 / 10 / 3 / 12; }
-    .text { grid-area: 3 / 3 / 4 / 6; }
-    .kontaktformular { grid-area: 3 / 8 / 4 / 11; }
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 30px;
+}
+
+.frage {
+    grid-row: 1 / auto;
+    grid-column: 2 / auto;
+    width: max-content;
+    justify-self: center;
+    margin-bottom: 30px;
+}
+
+.bestellungen {
+    grid-row: 2 / auto;
+    grid-column: 1 / 2;
+}
+
+.lieferungen {
+    grid-row: 2 / auto;
+    grid-column: 2 / 3;
+}
+
+.bezahlungen {
+    grid-row: 2 / auto;
+    grid-column: 3 / 4;
+}
+
+.text {
+    grid-row: 3 / auto;
+    grid-column: 1 / span 2;
+    margin-right: 20%;
+}
+
+.kontaktformular {
+    grid-row: 3 / auto;
+    grid-column: 3 / auto;
+}

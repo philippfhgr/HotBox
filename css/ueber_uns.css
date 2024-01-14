@@ -1,120 +1,136 @@
+.ueberUnsParent {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(33%, 1fr));
+    grid-template-rows: auto;
+    justify-items: center;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+.lauradrop,.cedricdrop,.philippdrop,.tanjadrop,.ricardadrop,.logoquaderdrop {
+    max-width: 100%;
+}
+
 .laura {
     width: 300px;
+    max-width: 100%;
     height: 300px;
     border-radius: 10px;
     background: var(--Violet, #430075);
     display: grid;
-    grid-area: 3 / 1 / 4 / 5;
+    grid-row: 3 / auto;
+    grid-column: 1 / auto;
     align-items: center;
     justify-items: center;
+    margin: 10px;
 }
 
 .philipp {
     width: 300px;
+    max-width: 100%;
     height: 300px;
     border-radius: 10px;
     background: var(--Violet, #430075);
     display: grid;
-    grid-area: 3 / 5 / 4 / 8;
+    grid-row: 3 / auto;
+    grid-column: 2 / auto;
     align-items: center;
     justify-items: center;
+    margin: 10px;
 }
 
 .tanja {
     width: 300px;
+    max-width: 100%;
     height: 300px;
     border-radius: 10px;
     background: var(--Violet, #430075);
     display: grid;
-    grid-area: 3 / 9 / 4 / 12;
+    grid-row: 3 / auto;
+    grid-column: 3 / auto;
     align-items: center;
     justify-items: center;
+    margin: 10px;
 }
 
 .cedric {
     width: 300px;
+    max-width: 100%;
     height: 300px;
     border-radius: 10px;
     background: var(--Violet, #430075);
     display: grid;
-    grid-area: 4 / 1 / 5 / 5;
+    grid-row: 4 / auto;
+    grid-column: 1 / auto;
     align-items: center;
     justify-items: center;
-
-}
-
-.ricarda {
-    width: 300px;
-    height: 300px;
-    border-radius: 10px;
-    background: var(--Violet, #430075);
-    display: grid;
-    grid-area: 4 / 9 / 5 / 12;
-    align-items: center;
-    justify-items: center;
-
+    margin: 10px;
 }
 
 .logoquader {
     width: 300px;
+    max-width: 100%;
     height: 300px;
     border-radius: 10px;
     background: var(--Violet, #430075);
     display: grid;
-    grid-area: 4 / 5 / 5 / 8;
+    grid-row: 4 / auto;
+    grid-column: 2 / auto;
     align-items: center;
     justify-items: center;
+    margin: 10px;
 }
 
-.ueberUnsParent {
+.ricarda {
+    width: 300px;
+    max-width: 100%;
+    height: 300px;
+    border-radius: 10px;
+    background: var(--Violet, #430075);
     display: grid;
-    grid-template-columns: repeat(12, 1fr);
-    grid-template-rows: auto auto;
-    grid-row-gap: 50px;
-    justify-items: center;
+    grid-row: 4 / auto;
+    grid-column: 3 / auto;
     align-items: center;
+    justify-items: center;
+    margin: 10px;
 }
 
 .portrait {
-    grid-area: 1 / 1 / 2 / 7;
+    grid-row: 1 / auto;
+    grid-column: span 2 / auto;
+    margin-top: 10%;
     border-radius: 10px;
-    margin-top: 70px;
-    margin-left: 100px;
+    max-width: 100%;
 }
 
-.A {
-    grid-area: 1 / 7 / 2 / 13;
-    margin-right: 100px;
+.motiviert {
+    grid-row: 1 / auto;
+    grid-column: 3 / auto;
+    margin-top: 10%;
 }
 
-.B {
-    grid-area: 2 / 1 / 3 / 13;
-    margin-left: 200px;
-    margin-right: 200px;
+.team {
+grid-row: 2 / auto;
+grid-column: span 3 / auto;
 }
 
-.C {
+.gründungsgeschichte {
     grid-area: 5 / 1 / 6 / 13;
-    margin-left: 100px;
-    margin-right: 100px;
     margin-top: 20px;
 }
 
-.D {
+.vision {
     grid-area: 6 / 1 / 7 / 13;
-    margin-left: 100px;
-    margin-right: 100px;
 }
 
-.E {
+.werte {
     grid-area: 7 / 1 / 8 / 13;
-    margin-left: 100px;
-    margin-right: 100px;
     margin-bottom: 70px;
 }
 
 .dropdown {
     display: inline-block;
+    width: 300px;
 }
 
 .dropbtn {
@@ -122,25 +138,123 @@
     color: #E7FC35;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 25px;
-    flex-shrink: 0;
     border: 0;
+    width: 300px;
 }
 
 .dropdown-content {
     display: none;
     position: absolute;
     background-color: #E7FC35;
-    width: 300px;
     z-index: 1;
     border-radius: 10px;
+    width: 300px;
 }
 
 .dropdown-content a {
     color: #430075;
     padding: 12px 16px;
     display: block;
+    max-width: 100%;
+    font-size: 25px;
 }
 
 .dropdown:hover .dropdown-content {
     display: block;
 }
+
+@media only screen and (max-width: 750px) {
+    .ueberUnsParent {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .lauradrop, .cedricdrop, .philippdrop, .tanjadrop, .ricardadrop, .logoquaderdrop {
+        max-width: 100%;
+    }
+
+    .laura, .philipp, .tanja, .cedric, .logoquader, .ricarda {
+        width: 100%;
+        max-width: none;
+        height: 300px;
+        border-radius: 10px;
+        background: var(--Violet, #430075);
+        display: grid;
+        align-items: center;
+        justify-items: center;
+        order: 4;
+    }
+
+    .portrait {
+        order: 2;
+        margin: auto;
+    }
+
+    .motiviert {
+        order: 1;
+        margin: 0px;
+        margin-top: 30px;
+    }
+
+    .team {
+        order: 3;
+    }
+
+    .gründungsgeschichte {
+        order: 5;
+    }
+
+    .vision {
+        order: 6;
+    }
+
+    .werte {
+        order: 7;
+    }
+
+    .dropdown {
+        display: inline-block;
+        width: 100%;
+        max-width: none;
+        order: 4;
+    }
+
+    .dropbtn {
+        background-color: #430075;
+        color: #E7FC35;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 25px;
+        border: 0;
+        width: 100%;
+        max-width: none;
+        order: 4;
+    }
+
+    .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: #E7FC35;
+        z-index: 1;
+        border-radius: 10px;
+        width: 100%;
+        max-width: none;
+        order: 4;
+    }
+
+    .dropdown-content a {
+        color: #430075;
+        padding: 12px 16px;
+        display: block;
+        max-width: 100%;
+        font-size: 25px;
+    }
+
+    .dropdown:hover .dropdown-content {
+        display: block;
+        order: 10;
+    }
+}
+
