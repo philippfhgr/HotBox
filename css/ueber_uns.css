@@ -98,15 +98,16 @@
 .portrait {
     grid-row: 1 / auto;
     grid-column: span 2 / auto;
-    margin-top: 10%;
+    margin-top: 50px;
     border-radius: 10px;
     max-width: 100%;
+    margin-bottom: 30px;
 }
 
 .motiviert {
     grid-row: 1 / auto;
     grid-column: 3 / auto;
-    margin-top: 10%;
+    margin-top: 50px;
 }
 
 .team {
@@ -163,7 +164,7 @@ grid-column: span 3 / auto;
     display: block;
 }
 
-@media only screen and (max-width: 750px) {
+@media only screen and (max-width: 1150px) {
     .ueberUnsParent {
         display: flex;
         flex-direction: column;
@@ -177,7 +178,6 @@ grid-column: span 3 / auto;
     }
 
     .laura, .philipp, .tanja, .cedric, .logoquader, .ricarda {
-        width: 100%;
         max-width: none;
         height: 300px;
         border-radius: 10px;
@@ -190,7 +190,8 @@ grid-column: span 3 / auto;
 
     .portrait {
         order: 2;
-        margin: auto;
+        margin: 0px;
+        margin-bottom: 40px;
     }
 
     .motiviert {
@@ -218,7 +219,7 @@ grid-column: span 3 / auto;
     .dropdown {
         display: inline-block;
         width: 100%;
-        max-width: none;
+        width: 300px;
         order: 4;
     }
 
@@ -239,7 +240,7 @@ grid-column: span 3 / auto;
         background-color: #E7FC35;
         z-index: 1;
         border-radius: 10px;
-        width: 100%;
+        width: 300px;
         max-width: none;
         order: 4;
     }

@@ -208,6 +208,12 @@
         align-items: center;
     }
 
+    .dropdown {
+        margin : 20px;
+        width: 100%;
+        max-width: 500px;
+    }
+
     .profitiere {
         order: 1;
     }
