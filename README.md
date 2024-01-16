@@ -1,6 +1,9 @@
 # HotBox
  Projekt für das Fach IM1 FHGR
 
+# HotBox
+ Projekt für das Fach IM1 FHGR
+
 ## Dokumentation
 
 21.11.23

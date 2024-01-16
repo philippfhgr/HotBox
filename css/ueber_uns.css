@@ -184,7 +184,6 @@ grid-column: span 3 / auto;
         background: var(--Violet, #430075);
         display: grid;
         align-items: center;
-        justify-items: center;
         order: 4;
     }
 

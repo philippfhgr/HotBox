@@ -88,7 +88,6 @@ footer {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-evenly;
-
 }
 
 footer a {
@@ -100,6 +99,7 @@ footer a {
     flex-direction: column;
     flex-wrap: wrap;
     grid-column: 1;
+    list-style-type: none;
 }
 
 .mitte {
@@ -107,6 +107,7 @@ footer a {
     flex-direction: column;
     flex-wrap: wrap;
     grid-column: 2;
+    list-style-type: none;
 }
 
 .rechts {
@@ -115,6 +116,7 @@ footer a {
     flex-wrap: wrap;
     align-items: center;
     grid-column: 3;
+    list-style-type: none;
 }
 
 .rechts img {
@@ -198,6 +200,9 @@ p {
     display: flex;
     align-items: center;
     justify-content: center;
+    grid-row: 3 / 4;
+    grid-column: 2 / auto;
+    margin-top: 20%;
 }
 
 .funktion:hover,
@@ -284,12 +289,6 @@ p {
     grid-column: span 2 / auto;
 }
 
-.funktion {
-    grid-row: 3 / 4;
-    grid-column: 2 / auto;
-    margin-top: 20%;
-}
-
 .vorteile {
     grid-row: 4 / 5;
     grid-column: 2 / auto;
@@ -309,7 +308,7 @@ p {
     grid-column: span 1;
     margin: 5%;
     margin-bottom: 40%;
-}
+} 
 
 @media only screen and (max-width: 956px) {
     .imgContainer,
@@ -326,17 +325,12 @@ p {
     .medien,
     .home {
         width: 100%;
-        margin-top:30px;
+        margin-top: 30px;
         margin-left: 0px;
         margin-right: 0px;
         display: flex;
         flex-direction: column;
         align-items: center;
-    }
-
-    .quaderTitel,
-    .vorteile h3 {
-        text-align: left;
     }
 
     .quader1 {
@@ -386,6 +380,8 @@ p {
 
     .funktion {
         order: 4;
+        max-width: 400px;
+        margin-top: 60px;
     }
 
     .imgEssen {

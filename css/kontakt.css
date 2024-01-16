@@ -69,6 +69,8 @@ input[type="submit"]:hover {
     font-style: normal;
     font-weight: 300;
     line-height: 30px;
+    grid-row: 3 / auto;
+    grid-column: 3 / auto;
 }
 
 .bestellungen {
@@ -181,18 +183,11 @@ input[type="submit"]:hover {
     margin-right: 20%;
 }
 
-.kontaktformular {
-    grid-row: 3 / auto;
-    grid-column: 3 / auto;
-}
-
-
 @media screen and (max-width: 956px) {
     .kontakt {
         display: flex;
         flex-direction: column;
         align-items: center;
-        justify-content: center; /* Zentriere horizontal */
     }
 
     .frage,
@@ -232,7 +227,11 @@ input[type="submit"]:hover {
 
     .kontaktformular {
         order: 5;
-        align-self: center;      /* Zentriere vertikal */
+    }
+
+    input[type="text"],input[type="email"],textarea, input[type="submit"] {
+        max-width: 100%;
+        margin-left: 0px;
     }
 }
 

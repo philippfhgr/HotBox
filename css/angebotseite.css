@@ -32,7 +32,7 @@
 
 .dropdownGrid {
     display: grid;
-    grid-template-columns: 1;
+    grid-template-columns: 1fr;
     grid-template-rows: auto auto;
 }
 
@@ -215,19 +215,21 @@
     }
 
     .profitiere {
-        order: 1;
-    }
-
-    .top2Container {
         order: 2;
     }
 
-    .imgApp {
+    .top2Container {
         order: 3;
+    }
+
+    .imgContainer {
+        order: 1;
+        max-width: 400px;
     }
 
     .wähle {
         order: 4;
+        margin-top: 50px;
     }
 
     .hotboxContainer {
