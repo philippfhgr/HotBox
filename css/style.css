@@ -72,6 +72,15 @@ header {
     margin-left: 20px;
 }
 
+.titel h2 {
+    line-height: 35px;
+    margin-bottom: 10px;
+}
+
+.titel h1 {
+    margin-bottom: 50px;
+}
+
 a {
     text-decoration: none;
     color: var(--Grellgrn, #E7FC35);
@@ -83,11 +92,11 @@ a {
 footer {
     background: var(--Violet, #430075);
     max-height: fit-content;
-    padding: 30px;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-evenly;
+    align-items: center;
 }
 
 footer a {
@@ -97,26 +106,31 @@ footer a {
 .links {
     display: flex;
     flex-direction: column;
-    flex-wrap: wrap;
-    grid-column: 1;
+    align-items: flex-start;
     list-style-type: none;
+    padding: 0px;
+    margin: 20px;
+    margin-top: 5%;
 }
 
 .mitte {
     display: flex;
     flex-direction: column;
-    flex-wrap: wrap;
-    grid-column: 2;
+    align-items: flex-start;
     list-style-type: none;
+    padding: 0px;
+    margin: 20px;
+    margin-top: 5%;
 }
 
 .rechts {
     display: flex;
     flex-direction: column;
-    flex-wrap: wrap;
-    align-items: center;
-    grid-column: 3;
     list-style-type: none;
+    align-items: center;
+    padding: 0px;
+    margin: 20px;
+    margin-top:5%;
 }
 
 .rechts img {
