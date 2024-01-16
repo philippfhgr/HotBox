@@ -45,3 +45,10 @@ Media Queries erstellt.
 15.12.23
 Kleine Anpassungen bezüglich Media Queries.
 Troubleshooting für kleinere Probleme.
+
+
+## Offenlegung
+
+Die benutzten Quellen und Arbeitsmittel setzen sich aus den Grid- und Flexpostern, Gridgenerator, Squoosh, W3Schools und vereinzelten Youtube Tutorials zusammen.
+Für Troubleshooting haben wir viel mit Chatgpt gearbeitet um uns verschiedene mögliche Lösungsansätze aufzeigen zu lassen. Auch Möglichkeiten zu CSS-Anpassungen lassen sich super von Chatgpt aufzeigen. Ganze Code Blöcke haben wir kaum von Chatgpt benutzt, da diese oft fehleranfällig waren, weswegen wir es mehr für verschiedene Ansätze und Möglichkeiten benutzt haben.
+Für die komplette Überarbeitung des Grids mussten wir auf Youtube Tutorials zurückgreifen und uns auch dort wieder verschiedene Ansätze ansehen.
