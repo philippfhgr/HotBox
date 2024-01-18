@@ -103,17 +103,7 @@ footer a {
     color: #F0D59E;
 }
 
-.links {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    list-style-type: none;
-    padding: 0px;
-    margin: 20px;
-    margin-top: 5%;
-}
-
-.mitte {
+.links, .mitte {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -130,7 +120,7 @@ footer a {
     align-items: center;
     padding: 0px;
     margin: 20px;
-    margin-top:5%;
+    margin-top: 5%;
 }
 
 .rechts img {
@@ -289,13 +279,13 @@ p {
 
 .imgEssen {
     max-width: 100%;
-    margin-top: 20%;
+    margin-top: 70px;
 }
 
 .warteschlange {
     grid-row: 1 / auto;
     grid-column: span 2 / auto;
-    margin-top: 10%;
+    margin-top: 50px
 }
 
 .jederzeit {
@@ -311,20 +301,25 @@ p {
     min-width: max-content;
 }
 
-.vorteil1, .vorteil2, .vorteil3 {
+.vorteil1,
+.vorteil2,
+.vorteil3 {
     grid-row: 5 / 6;
     max-width: 300px;
 }
 
-.quader1, .quader2, .quader3 {
+.quader1,
+.quader2,
+.quader3 {
     max-height: fit-content;
     grid-row: 6 / auto;
     grid-column: span 1;
     margin: 5%;
-    margin-bottom: 40%;
-} 
+    margin-bottom: 80px;
+}
 
 @media only screen and (max-width: 956px) {
+
     .imgContainer,
     .quader1,
     .warteschlange,
@@ -347,6 +342,10 @@ p {
         align-items: center;
     }
 
+    .warteschlange{
+        margin-top: 10px;
+    }
+
     .quader1 {
         order: 9;
         margin: 0px;
@@ -354,17 +353,18 @@ p {
 
     .imgContainer {
         order: 2;
+        margin-bottom: 20px;
     }
 
     .quader2 {
         order: 10;
-        margin: 10px;
+        margin: 30px;
     }
 
     .quader3 {
         order: 11;
         margin: 0px;
-        margin-bottom: 60px;
+        margin-bottom: 80px;
     }
 
     .warteschlange {

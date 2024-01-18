@@ -1,18 +1,4 @@
-input[type="text"] {
-    border-radius: 10px;
-    border: #430075 5px solid;
-    color: #000;
-    font-style: italic;
-    font-weight: 100;
-    line-height: 50px;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 20px;
-    margin: 20px;
-    width: 400px;
-    padding-left: 10px;
-}
-
-input[type="email"] {
+input[type="text"], input[type="email"], textarea {
     border-radius: 10px;
     border: #430075 5px solid;
     color: #000;
@@ -27,18 +13,7 @@ input[type="email"] {
 }
 
 textarea {
-    border-radius: 10px;
-    border: #430075 5px solid;
-    color: #000;
-    font-style: italic;
-    font-weight: 100;
-    line-height: 50px;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 20px;
-    margin: 20px;
-    width: 400px;
     height: 300px;
-    padding-left: 10px;
 }
 
 input[type="submit"] {
@@ -73,7 +48,7 @@ input[type="submit"]:hover {
     grid-column: 3 / auto;
 }
 
-.bestellungen {
+.bestellungen, .lieferungen, .bezahlungen {
     height: 70px;
     width: 250px;
     max-width: 100%;
@@ -86,45 +61,12 @@ input[type="submit"]:hover {
 }
 
 .bestellungen:hover,
-.bestellungen:hover a {
-    background: #E7FC35;
-    color: #430075;
-}
-
-.lieferungen {
-    height: 70px;
-    width: 250px;
-    max-width: 100%;
-    border-radius: 10px;
-    background: #430075;
-    display: flex;
-    justify-content: center;
-    margin-bottom: 80px;
-    cursor: pointer;
-    margin-left: 10px;
-    margin-right: 10px;
-}
-
+.bestellungen:hover a,
 .lieferungen:hover,
-.lieferungen:hover a {
-    background: #E7FC35;
-    color: #430075;
-}
-
-.bezahlungen {
-    height: 70px;
-    width: 250px;
-    max-width: 100%;
-    border-radius: 10px;
-    background: #430075;
-    display: flex;
-    justify-content: center;
-    margin-bottom: 80px;
-    cursor: pointer;
-}
-
+.lieferungen:hover a,
 .bezahlungen:hover,
-.bezahlungen:hover a {
+.bezahlungen:hover a
+ {
     background: #E7FC35;
     color: #430075;
     max-width: 100%;
@@ -133,6 +75,9 @@ input[type="submit"]:hover {
 .text {
     display: flex;
     flex-direction: column;
+    grid-row: 3 / auto;
+    grid-column: 1 / span 2;
+    margin-right: 20%;
 }
 
 .text a {
@@ -160,6 +105,7 @@ input[type="submit"]:hover {
     width: max-content;
     justify-self: center;
     margin-bottom: 30px;
+    margin-top: 20px;
 }
 
 .bestellungen {
@@ -175,12 +121,6 @@ input[type="submit"]:hover {
 .bezahlungen {
     grid-row: 2 / auto;
     grid-column: 3 / 4;
-}
-
-.text {
-    grid-row: 3 / auto;
-    grid-column: 1 / span 2;
-    margin-right: 20%;
 }
 
 @media screen and (max-width: 956px) {
@@ -229,9 +169,11 @@ input[type="submit"]:hover {
         order: 5;
     }
 
-    input[type="text"],input[type="email"],textarea, input[type="submit"] {
+    input[type="text"],
+    input[type="email"],
+    textarea,
+    input[type="submit"] {
         max-width: 100%;
         margin-left: 0px;
     }
 }
-

@@ -7,7 +7,12 @@
     margin-right: 10%;
 }
 
-.lauradrop,.cedricdrop,.philippdrop,.tanjadrop,.ricardadrop,.logoquaderdrop {
+.lauradrop,
+.cedricdrop,
+.philippdrop,
+.tanjadrop,
+.ricardadrop,
+.logoquaderdrop {
     max-width: 100%;
 }
 
@@ -95,13 +100,17 @@
     margin: 10px;
 }
 
-.portrait {
+.portraitContainer {
     grid-row: 1 / auto;
     grid-column: span 2 / auto;
-    margin-top: 50px;
+    margin-top: 70px;
+    margin-bottom: 50px;
+    max-width: 100%;
+}
+
+.portrait {
     border-radius: 10px;
     max-width: 100%;
-    margin-bottom: 30px;
 }
 
 .motiviert {
@@ -111,8 +120,9 @@
 }
 
 .team {
-grid-row: 2 / auto;
-grid-column: span 3 / auto;
+    grid-row: 2 / auto;
+    grid-column: span 3 / auto;
+    margin-bottom: 20px;
 }
 
 .gründungsgeschichte {
@@ -126,7 +136,7 @@ grid-column: span 3 / auto;
 
 .werte {
     grid-area: 7 / 1 / 8 / 13;
-    margin-bottom: 70px;
+    margin-bottom: 80px;
 }
 
 .dropdown {
@@ -173,11 +183,21 @@ grid-column: span 3 / auto;
         margin-right: 0;
     }
 
-    .lauradrop, .cedricdrop, .philippdrop, .tanjadrop, .ricardadrop, .logoquaderdrop {
+    .lauradrop,
+    .cedricdrop,
+    .philippdrop,
+    .tanjadrop,
+    .ricardadrop,
+    .logoquaderdrop {
         max-width: 100%;
     }
 
-    .laura, .philipp, .tanja, .cedric, .logoquader, .ricarda {
+    .laura,
+    .philipp,
+    .tanja,
+    .cedric,
+    .logoquader,
+    .ricarda {
         max-width: none;
         height: 300px;
         border-radius: 10px;
@@ -187,7 +207,7 @@ grid-column: span 3 / auto;
         order: 4;
     }
 
-    .portrait {
+    .portraitContainer {
         order: 2;
         margin: 0px;
         margin-bottom: 40px;
@@ -257,4 +277,3 @@ grid-column: span 3 / auto;
         order: 10;
     }
 }
-

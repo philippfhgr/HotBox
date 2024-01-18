@@ -19,15 +19,14 @@
 
 .button1Container,
 .button2Container,
-.button3Container {
+.button3Container,
+.button4Container {
     position: relative;
     display: inline-block;
 }
 
 .button4Container {
     margin-bottom: 170px;
-    position: relative;
-    display: inline-block;
 }
 
 .dropdownGrid {
@@ -39,9 +38,10 @@
 .dropdown {
     display: inline-block;
     position: relative;
+    margin-top: 40px;
 }
 
-.dropdown-content{
+.dropdown-content {
     display: none;
     position: absolute;
     background-color: #430075;
@@ -53,7 +53,6 @@
 
 .dropdown-karte {
     width: 100%;
-    max-width: 500px;
 }
 
 .dropdown-content ul {
@@ -94,7 +93,10 @@
     border-radius: 10px;
 }
 
-.button1, .button2, .button3, .button4 {
+.button1,
+.button2,
+.button3,
+.button4 {
     max-width: 100%;
 }
 
@@ -110,7 +112,7 @@
 .profitiere {
     grid-row: 1 / auto;
     grid-column: span 2 / auto;
-    margin-top: 10%;
+    margin-top: 50px;
 }
 
 .top2Container {
@@ -118,7 +120,14 @@
     grid-column: span 2 / auto;
 }
 
-.button1Container, .button2Container {
+.top2Container a, .bottom2Container a {
+    margin: 0;
+}
+
+.button1Container,
+.button2Container,
+.button3Container,
+.button4Container {
     margin: 1%;
 }
 
@@ -126,20 +135,20 @@
     grid-row: 3 / auto;
     grid-column: span 3 / auto;
     max-width: 100%;
-    margin-top: 20%;
+    margin-top: 70px;
 }
 
 .wähle {
     grid-row: 4 / auto;
     grid-column: span 4;
-    margin-top: 5%;
+    margin-top: 40px;
 }
 
 .hotboxContainer {
     grid-row: 5 / auto;
     grid-column: span 1 / auto;
     margin: 5px;
-    margin-top: 30px;
+    margin-top: 60px;
 }
 
 .hotbox {
@@ -150,13 +159,13 @@
 .mensa {
     grid-row: 5 / auto;
     grid-column: 2 / span 2;
-    margin-top: 30px;
+    margin-top: 40px;
 }
 
 .warmes {
     grid-row: 6 / auto;
     grid-column: 1 / span 2;
-    margin-top: 40px;
+    margin-top: 60px;
 }
 
 .dropdownGrid {
@@ -168,18 +177,14 @@
 .bottom2Container {
     grid-row: 7 / auto;
     grid-column: 1 / span 2;
-    margin-top: 30px;
-    margin-bottom: 30%;
-}
-
-.button3Container, .button4Container {
-    margin: 1%;
+    margin-top: 70px;
+    margin-bottom: 80px;
 }
 
 .holDir {
     grid-row: 7 / auto;
     grid-column: 3 / span 1;
-    margin-top: 30px;
+    margin-top: 90px;
 }
 
 @media only screen and (max-width: 980px) {
@@ -200,7 +205,7 @@
     .bottom2Container,
     .holDir {
         width: 100%;
-        margin-top:30px;
+        margin-top: 30px;
         margin-left: 0px;
         margin-right: 0px;
         display: flex;
@@ -209,7 +214,7 @@
     }
 
     .dropdown {
-        margin : 20px;
+        margin: 20px;
         width: 100%;
         max-width: 500px;
     }
@@ -256,10 +261,6 @@
 
     .holDir {
         order: 10;
-        margin-bottom: 30px;
+        margin-bottom: 80px;
     }
 }
-
-
-
-
