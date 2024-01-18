@@ -26,29 +26,36 @@ Grids weiter überarbeitet. Weiteren Über uns Inhalt und Video eingefügt.
 22.12.23
 Buttons und Bilder eingefügt. Verlinkungen erstellt.
 
-01.12.23
+01.01.24
 Portraitbilder bei Über uns eingefügt und Dropdownmenü begonnen.
 
-02.12.23
+02.01.24
 Dropdown fertiggestellt bei Über uns. Auf Kontaktseite CSS begonnen.
 
-04.12.23
+04.01.24
 Formular auf Kontaktseite fertiggestellt.
 
-05.12.23
+05.01.24
 Kleine Anpassungen auf allen Seiten
 
-10.12.23
+10.01.24
 An Header und Nav gearbeitet. App Buttons durch Bilder ersetzt. Footer, Über uns und Kontaktseite fertiggestellt.
 
-14.12.23
+14.01.24
 Grid nochmals von Grund auf neu gebaut für Responsivity.
 Media Queries erstellt.
 
-15.12.23
+15.01.24
 Kleine Anpassungen bezüglich Media Queries.
 Troubleshooting für kleinere Probleme.
 
+16.01.24
+Responsivity überarbeitet auf der ganzen Seite. Code validiert und fehler behoben.
+Kleine Fixes.
+
+18.01.24
+Margins auf der ganzen Seite überarbeitet. Dateiformate bei Bilder angepasst.
+Weitere kleine Fixes.
 
 ## Offenlegung
 
